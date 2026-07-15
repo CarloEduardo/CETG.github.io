@@ -46,6 +46,45 @@ foreach j in 1 2 3 4 5 {
 5. Ejecutar el script.
 
 ## 3. Módulos disponibles <a id="3"></a>
+
+| **Nro.** | **Módulo** | **Descripción** |
+|---:|---|---|
+| 1 | Módulo 1 | Características de la Vivienda y del Hogar |
+| 2 | Módulo 2 | Características de los Miembros del Hogar |
+| 3 | Módulo 3 | Educación |
+| 4 | Módulo 4 | Salud |
+| 5 | Módulo 5 | Empleo e Ingresos |
+| 6 | Módulo 7 | Gastos en Alimentos y Bebidas |
+| 7 | Módulo 8 | Instituciones Benéficas |
+| 8 | Módulo 9 | Mantenimiento de la Vivienda |
+| 9 | Módulo 10 | Transportes y Comunicaciones |
+| 10 | Módulo 11 | Servicios de la Vivienda |
+| 11 | Módulo 12 | Esparcimiento, Diversión y Servicios Culturales |
+| 12 | Módulo 13 | Vestido y Calzado |
+| 13 | Módulo 15 | Gastos de Transferencias |
+| 14 | Módulo 16 | Muebles y Enseres |
+| 15 | Módulo 17 | Otros Bienes y Servicios |
+| 16 | Módulo 18 | Equipamiento del Hogar |
+| 17 | Módulo 22 | Producción Agrícola |
+| 18 | Módulo 23 | Subproductos Agrícolas |
+| 19 | Módulo 24 | Producción Forestal |
+| 20 | Módulo 25 | Gastos en Actividades Agrícolas y/o Forestales |
+| 21 | Módulo 26 | Producción Pecuaria |
+| 22 | Módulo 27 | Subproductos Pecuarios |
+| 23 | Módulo 28 | Gastos en Actividades Pecuarias |
+| 24 | Módulo 34 | Variables Calculadas (Resumen) |
+| 25 | Módulo 37 | Programas Sociales |
+| 26 | Módulo 77 | Ingresos del Trabajador Independiente |
+| 27 | Módulo 78 | Bienes y Servicios para el Cuidado Personal |
+| 28 | Módulo 84 | Participación Ciudadana |
+| 29 | Módulo 85 | Gobernabilidad, Democracia y Transparencia |
+| 30 | Módulo 1825 | Beneficiarios de Instituciones sin fines de lucro: Olla Común |
+| 31 | Módulo 2081 | Crianza de Mascotas en el Hogar |
+| 32 | Módulo 2082 | Inseguridad Alimentaria |
+
+
+
+
 ___
 <table>
 <thead><tr>
