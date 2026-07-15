@@ -183,6 +183,3 @@ Cuando esto ocurre, el script muestra un mensaje indicando que el archivo debe d
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](/LICENSE) para más detalles.
 
 [**⬆ Volver al inicio**](#top)
-
-<img src="/images/posts/geom-sf-facet/shared_legend_facet_calc-1.png" style="display: block; margin: auto;" />
-
