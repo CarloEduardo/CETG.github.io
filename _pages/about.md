@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Sobre mí Carlos Eduardo Torres Garcia"
+title: "Sobre mí"
 author_profile: true
 redirect_from: 
   - /about/
@@ -15,7 +15,7 @@ A lo largo de mi trayectoria he trabajado en instituciones públicas como el Min
 
 En este sitio encontrarás mi portafolio de proyectos, experiencia profesional y recursos relacionados con Python, SQL, Power BI, Machine Learning y análisis de datos.
 
-## [Publicacione](publications)
+## [Publicaciones](publications)
 
 ## [Proyectos](portfolio)
 
