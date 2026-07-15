@@ -58,20 +58,20 @@ Habilidades e Intereses
 
 Cursos Complementarios
 ======
-  * [PEA Data Science](https://drive.google.com/file/d/1ZD-jXmPalrj4J33SULfO42iJTSzhJVOr/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [Gobierno de Datos](https://drive.google.com/file/d/1-7mBjd0u2JlNnusVpHiZReDDZZHuUGRz/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [Especialización en Python for Analytics](https://drive.google.com/file/d/1dyIDh5tmStbYDr_pP8giukYN-Ossf1zS/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [PEA Business Intelligence Fundamentals](https://drive.google.com/file/d/1yr8dph3iM1kyaXvnamEnl_c6f8H27oIm/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [Data Storytelling](https://drive.google.com/file/d/1eYphI6rTvCtQnVECwI58j6uC9xK--f1b/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [Especialización en Power BI](https://drive.google.com/file/d/1LR7WhI-ClZZF_2rW77OzfS6rFG06GwBx/view?usp=sharing) — *Data Mining Consulting, 2023*
-  * [Métodos Mixtos de Investigación](https://drive.google.com/file/d/1SzKwoWNu2bc4IrZtVpJSmL-J3yHqIdzx/view?usp=sharing) — *Data Mining Consulting, 2022*
-  * [QGIS y Econometría Espacial](https://drive.google.com/file/d/1Du7s_lqcPqeEOlfg-FeMs-u3PRZ4M_Nz/view?usp=sharing) — *Grupo LAMBDA S.A.C., 2021*
-  * [Planeamiento y Ejecución de Encuestas](https://drive.google.com/file/d/16aM_5-hzzeYLrxCA6S-JYrC2mOUILr79/view?usp=sharing) — *ENEI, 2021*
-  * [Machine Learning Advanced](https://drive.google.com/file/d/1PPQaF_WWa5tohljHXzXS2T8ZRToKm8yq/view?usp=sharing) — *Data Mining Consulting, 2020*
-  * [Python para Economistas](https://drive.google.com/file/d/1omRPI3GFlZKefkDFeebbGKUR2hBtakYI/view?usp=sharing) — *Grupo LAMBDA S.A.C., 2019*
-  * [Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil](https://drive.google.com/file/d/14VQo0jDZ8tpjPK-cf_Y67MvtgjMSH8jD/view?usp=sharing) — *BID, 2019*
-  * [Taller de Evaluación de Impacto – Nivel Intermedio](https://drive.google.com/file/d/1SdmhWkf_S-UEydizGzBo4aCxwVxhueud/view?usp=sharing) — *CISEPA – PUCP, 2018*
-  * [Taller de Investigación Social Aplicada usando STATA](/files/cv/01. Certificado de Taller de Investigación Social Aplicada usando STATA.pdf) — *CISEPA – PUCP, 2018*
+  * [PEA Data Science](/files/cv/14.-Certificado-de-PEA-Data-Science.pdf) — *Data Mining Consulting, 2023*
+  * [Gobierno de Datos](/files/cv/13.-Certificado-de-Gobierno-de-Datos.pdf) — *Data Mining Consulting, 2023*
+  * [Especialización en Python for Analytics](/files/cv/12.-Certificado-de-Python-for-Analytics.pdf) — *Data Mining Consulting, 2023*
+  * [PEA Business Intelligence Fundamentals](/files/cv/11.-Certificado-de-PEA-Business-Intelligence-Fundamentals.pdf) — *Data Mining Consulting, 2023*
+  * [Data Storytelling](/files/cv/10.-Certificado-de-Data-Storytelling.pdf) — *Data Mining Consulting, 2023*
+  * [Especialización en Power BI](/files/cv/09.-Certificado-de-Especializacion-en-Power-Bi.pdf) — *Data Mining Consulting, 2023*
+  * [Métodos Mixtos de Investigación](/files/cv/08.-Certificado-de-Metodos-mixtos-de-investigacion.pdf) — *Data Mining Consulting, 2022*
+  * [QGIS y Econometría Espacial](/files/cv/07.-Certificado-de-Qgis-y-Econometria-Espacial.pdf) — *Grupo LAMBDA S.A.C., 2021*
+  * [Planeamiento y Ejecución de Encuestas](/files/cv/06.-Certificado-de-Planeamiento-y-Ejecucion-de-Encuestas.pdf) — *ENEI, 2021*
+  * [Machine Learning Advanced](/files/cv/05.-Certificado-de-Machine-Learning-Advanced.pdf) — *Data Mining Consulting, 2020*
+  * [Python para Economistas](/files/cv/04.-Certificado-en-Python-para-Economistas.pdf) — *Grupo LAMBDA S.A.C., 2019*
+  * [Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil](/files/cv/03.-Certificado-de-Gestion-de-Proyectos-Sociales-para-ONGs-y-Organizaciones-de-la-Sociedad-Civil.pdf) — *BID, 2019*
+  * [Taller de Evaluación de Impacto – Nivel Intermedio](/files/cv/02.-Certificado-de-Taller-de-Evaluacion-de-Impacto-Nivel-Intermedio.pdf) — *CISEPA – PUCP, 2018*
+  * [Taller de Investigación Social Aplicada usando STATA](/files/cv/01.-Certificado-de-Taller-de-Investigacion-Social-Aplicada-usando-STATA.pdf) — *CISEPA – PUCP, 2018*
 
 Publicaciones
 ======
