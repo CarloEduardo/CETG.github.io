@@ -21,6 +21,4 @@ En este sitio encontrarás mi portafolio de proyectos, experiencia profesional y
 
 ## [Proyectos](portfolio)
 
-## [Blog](year-archive)
-
 ## [CV](cv)

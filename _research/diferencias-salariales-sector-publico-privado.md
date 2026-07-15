@@ -1,5 +1,5 @@
 ---
-title: "Conflict preemption"
+title: "Diferencias salariales entre trabajadores del Sector Público y el Sector Privado"
 layout: single-portfolio
 excerpt: "<img src='/images/research/epr.png' alt=''>"
 collection: research

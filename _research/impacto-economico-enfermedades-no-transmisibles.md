@@ -1,5 +1,5 @@
 ---
-title: "Social media data"
+title: "Impacto Económico de las Enfermedades No Transmisibles en Perú, 2010 - 2019"
 layout: single-portfolio
 excerpt: "<img src='/images/research/ternary.png' alt=''>"
 collection: research
