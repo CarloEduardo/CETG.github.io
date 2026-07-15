@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Script automatizado en Stata para descargar, organizar y extraer los módulos de la Encuesta Nacional de Hogares (ENAHO) del portal de [Microdatos](https://proyectos.inei.gob.pe/microdatos/) del INEI (2004–2025). Incluye gestión de módulos, extracción de archivos ZIP y una estructura reproducible para facilitar el procesamiento de datos.
+Script automatizado en Stata para descargar, organizar y extraer los módulos de la **Encuesta Nacional de Hogares (ENAHO)** del portal de [Microdatos](https://proyectos.inei.gob.pe/microdatos/) del INEI (2004–2025). Incluye gestión de módulos, extracción de archivos ZIP y una estructura reproducible para facilitar el procesamiento de datos.
 
 <!--more-->
 
