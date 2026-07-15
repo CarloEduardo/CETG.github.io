@@ -1,12 +1,12 @@
 ---
-title: Faceted maps in R
+title: Web Scraping ENDES 2004 2025
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2021-05-19
+date: 2025-05-06
 permalink: /posts/2021/05/geom-sf-facet
 excerpt_separator: <!--more-->
 toc: true

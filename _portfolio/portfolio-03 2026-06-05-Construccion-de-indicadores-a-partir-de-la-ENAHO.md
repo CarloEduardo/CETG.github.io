@@ -1,12 +1,12 @@
 ---
-title: Faceted maps in R
+title: Construcción de indicadores a partir de la ENAHO
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2021-05-19
+date: 2026-06-05
 permalink: /posts/2021/05/geom-sf-facet
 excerpt_separator: <!--more-->
 toc: true

@@ -1,12 +1,12 @@
 ---
-title: Faceted maps in R
+title: Proyectos de Power Bi
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2021-05-19
+date: 2021-07-22
 permalink: /posts/2021/05/geom-sf-facet
 excerpt_separator: <!--more-->
 toc: true
@@ -17,8 +17,6 @@ tags:
   - visualization
   - peacekeeping
 ---
-
-
 
 I recently needed to create a choropleth of a few different countries
 for a project on targeting of UN peacekeepers by non-state armed actors

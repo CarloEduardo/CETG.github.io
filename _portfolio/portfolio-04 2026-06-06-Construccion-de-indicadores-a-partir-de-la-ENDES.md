@@ -1,12 +1,12 @@
 ---
-title: Web Scraping ENAHO 2004 2025
+title: Construcción de indicadores a partir de la ENDES
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-05-05
+date: 2026-06-06
 permalink: /posts/2021/05/geom-sf-facet
 excerpt_separator: <!--more-->
 toc: true
@@ -17,6 +17,7 @@ tags:
   - visualization
   - peacekeeping
 ---
+
 
 
 I recently needed to create a choropleth of a few different countries
