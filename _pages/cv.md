@@ -77,3 +77,6 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+
+Puedes descargar una copia en PDF de mi CV [here](/files/CV Carlos Eduardo Torres Garcia - Policy Analyst.pdf).
+
