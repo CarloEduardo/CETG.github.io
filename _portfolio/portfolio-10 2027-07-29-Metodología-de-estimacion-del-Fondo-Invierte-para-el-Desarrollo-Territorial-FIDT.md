@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
+Metodología desarrollada para estimar y priorizar la asignación de recursos del Fondo Invierte para el Desarrollo Territorial (FIDT), apoyando la evaluación de proyectos de inversión pública mediante criterios técnicos y análisis de datos.
 
 <!--more-->
 

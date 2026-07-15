@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
+Metodología para analizar la accesibilidad geográfica mediante tiempos de viaje obtenidos con Google Routes API y técnicas de clustering espacial (DBSCAN), aplicable a la planificación territorial y la localización óptima de servicios y negocios.
 
 <!--more-->
 

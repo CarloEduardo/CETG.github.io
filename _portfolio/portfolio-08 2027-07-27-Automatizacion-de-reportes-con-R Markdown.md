@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
+Proyecto para automatizar la generación de reportes dinámicos en PDF, Word y HTML mediante R Markdown, integrando análisis, tablas, gráficos y texto en documentos reproducibles.
 
 <!--more-->
 
