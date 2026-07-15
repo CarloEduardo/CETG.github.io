@@ -1,12 +1,12 @@
 ---
-title: 03. Construcción de indicadores a partir de la ENAHO
+title: 08. Automatizacion-de-reportes-con-rmarkdown
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-06-05
+date: 2027-07-26
 permalink: /posts/2021/05/geom-sf-facet
 excerpt_separator: <!--more-->
 toc: true
@@ -18,15 +18,7 @@ tags:
   - peacekeeping
 ---
 
-
-
-I recently needed to create a choropleth of a few different countries
-for a project on targeting of UN peacekeepers by non-state armed actors
-I’m working on. A
-[choropleth](https://en.wikipedia.org/wiki/Choropleth_map) is a type of
-thematic map where data are aggregated up from smaller areas (or
-discrete points) to larger ones and then visualized using different
-colors to represent different numeric values.
+Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
 
 <!--more-->
 

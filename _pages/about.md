@@ -15,8 +15,6 @@ A lo largo de mi trayectoria he trabajado en instituciones públicas como el Min
 
 En este sitio encontrarás mi portafolio de proyectos, experiencia profesional y recursos relacionados con Python, SQL, Power BI, Machine Learning y análisis de datos.
 
-## [Publicaciones](publications)
-
 ## [Investigaciones](research)
 
 ## [Proyectos](portfolio)

@@ -1,5 +1,5 @@
 ---
-title: Predicción de Incumplimiento de Crédito
+title: 06. Predicción de Incumplimiento de Crédito
 output:
   md_document:
     variant: gfm+footnotes
