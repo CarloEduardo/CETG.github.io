@@ -97,10 +97,8 @@ El proceso completo puede resumirse mediante el siguiente flujo:
 
 El siguiente diagrama resume el flujo de ejecución del script para descargar y extraer automáticamente los módulos de la **Encuesta Nacional de Hogares (ENAHO)**:
 
+# Flujo del proceso de descarga y extracción de la ENAHO (2004–2025)
 ```mermaid
----
-title: Flujo del proceso de descarga y extracción de la ENAHO (2004–2025)
----
 flowchart TD
 
 A([Inicio]) --> B[Definir directorio de trabajo]
@@ -121,6 +119,7 @@ M -- No --> N{¿Quedan años?}
 N -- Sí --> D
 N -- No --> O([Fin])
 ```
+
 *Elaboración propia.* <br>
 ***Nota:** El diagrama muestra el flujo de ejecución del script, incluyendo la iteración por años y módulos, la construcción de la URL de descarga, la obtención de los archivos desde el portal oficial del INEI y su extracción automática. En caso de que un archivo comprimido presente inconsistencias, el script conserva el archivo `.zip` y notifica al usuario que la extracción debe realizarse manualmente.*
 
@@ -130,16 +129,18 @@ Al finalizar la ejecución se obtiene una estructura similar a la siguiente:
 ```text
 ENAHO/
 │
-├──2004/
+├── 2004/
 │   ├── enaho01-2004.dta
 │   ├── enaho02-2004.dta
 │   └── ...
 │
-├──2005/
+├── 2005/
+│   └── ...
 │
-├──...
+├── ...
 │
-└──2025/
+└── 2025/
+    └── ...
 ```
 Cada carpeta contiene todos los módulos descargados y extraídos para el año correspondiente.
 
@@ -157,183 +158,6 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 [![X Twitter](https://img.shields.io/badge/Twitter-000000?style=flat&logo=x&logoColor=white)](https://x.com/Carlo4_Eduardo)
 
 [**⬆ Volver al inicio**](#a)
-
-
-We can either supply each individual subplot to `plot_grid()`
-separately, or we can use the `plotlist` argument to pass a list of
-plots; good thing we saved them in a list:
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = maps, labels = LETTERS[1:5], label_size = 10, nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/individual_legends-1.png" style="display: block; margin: auto;" />
-
-I tried using the name of each country as the subplot label, but because
-[label positioning is relative to the width of
-labels](https://github.com/wilkelab/cowplot/issues/32#issuecomment-198428848)
-it was impossible to get them all nicely left-aligned. As a result, I
-had to settle on using letters to label the subplots and then
-identifying them in the figure caption in text. As you’ll see
-[later](#bonus-still-to-solve), there’s no perfect way of accomplishing
-this and you’ll have to make a trade-off somewhere.
-
-Setting aside that compromise, there’s still one issue with this plot
-that we can fix. We’re measuring the same thing (attacks on UN
-peacekeeping personnel) in all five choropleths, so there’s no need for
-five separate scales.
-
-## Shared legend
-
-The `cowplot`
-[documentation](https://wilkelab.org/cowplot/articles/shared_legends.html)
-demonstrates how to use the `get_legend()` function to extract the
-legend from one of the subplots and then add it as another element to
-`plot_grid()`, placing it in the bottom right like we sort of managed to
-do with `tmap`. However, we need to add
-`theme(legend.position = 'none')` to the ggplot call for each subplot,
-otherwise we’ll just end up with six legends. That means we need to
-apply to each element of our list of maps, which means it’s another job
-that `map()` is perfect for! We’ll use `map()` to take each subplot in
-`maps` and remove the legend from it, then use `get_legend()` to add a
-legend in the bottom right.
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = c(map(.x = maps,
-                           .f = function(x) x + theme(legend.position = 'none'))),
-          get_legend(maps[[1]]),
-          labels = LETTERS[1:5], label_size = 10, nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/shared_legend_missing-1.png" style="display: block; margin: auto;" />
-This doesn’t look right! We told `plot_grid()` to start with our maps,
-so why is the legend the first thing in the plot? If you look closely at
-the documentation for `plot_grid()`, you’ll see that the `...` argument
-comes before the `plotlist` argument in the function definition. Even
-when we specify `plotlist` first, the function will add `plotlist` after
-`...`.[^6] To fix this, all we need to do is concatenate the results of
-`get_legend()` with the results of our call to `map()`. Note that we
-need to first transform the former to a list with `list()`, otherwise
-each element of it will be concatenated separately rather than as a
-`grob` object:
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = c(map(.x = maps,
-                           .f = function(x) x + theme(legend.position = 'none')),
-                       list(get_legend(maps[[1]]))),
-          labels = LETTERS[1:5],
-          label_size = 10,
-          nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/shared_legend_wrong-1.png" style="display: block; margin: auto;" />
-
-So far so good. But if we try using a different map in our call to
-`get_legend()`, things get weird:
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = c(map(.x = maps,
-                           .f = function(x) x + theme(legend.position = 'none')),
-                       list(get_legend(maps[[4]]))),
-          labels = LETTERS[1:5], label_size = 10, nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/shared_legend_wrong2-1.png" style="display: block; margin: auto;" />
-Each subplot has its own unique legend that’s automatically generated
-from the values of `attacks` it contains. This is even worse than it
-might seem at first glance, because it means that the various subplots
-are in no way comparable to one another!
-
-## Accurate shared legend
-
-To avoid misrepresenting the data, we need to ensure that each subplot
-has the same legend. The easiest way to do this is to manually set the
-legend for each subplot in our call to `scale_fill_continuous()`. Even
-though we’re manually setting the bounds of the legend, that doesn’t
-mean we have to hard code them. We can use a simpler version of our code
-to join attacks to ADM2s and then calculate the highest number of
-attacks across *all* countries in the data. Then we take advantage of
-the fact that `scale_fill_continuous()` can pass additional parameters
-to `continuous_scale()` via the `...` argument. The `continuous_scale()`
-function is a low-level function used throughout `ggplot2` to construct
-continuous scales, and it has a `limits` argument that sets the bounds
-of the scale. All we have to do is pass the minimum and maximum (logged)
-numbers of attacks in the data and we’re in business:
-
-``` r
-st_join(adm, acled) %>% 
-  st_drop_geometry() %>%   # we don't need a map at the end; drop geometry to speed up
-  group_by(NAME_0, NAME_1, NAME_2) %>% 
-  summarize(attacks = log1p(sum(!is.na(event_id_cnty)))) %>% 
-  pull(attacks) %>%        # extract attacks variable
-  range() -> attacks_range # get min and max
-
-## create maps in separate plots, force common scale between them
-maps_shared <- map(.x = pko_countries, 
-                   .f = function(x) adm %>% 
-                     filter(NAME_0 == x) %>% 
-                     st_join(acled) %>% 
-                     group_by(NAME_0, NAME_1, NAME_2) %>% 
-                     summarize(attacks = log1p(sum(!is.na(event_id_cnty)))) %>% 
-                     ggplot(aes(fill = attacks)) +
-                     geom_sf(lwd = NA) +
-                     scale_fill_continuous(limits = attacks_range,
-                                           name = 'PKO targeting\nevents (logged)') +
-                     theme_rw() +
-                     theme(axis.text = element_blank(),
-                           axis.ticks = element_blank()))
-```
-
-Now all that’s left is to use `plot_grid()` to put it all together:
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = c(map(.x = maps_shared,
-                           .f = function(x) x + theme(legend.position = 'none')),
-                       list(get_legend(maps_shared[[1]]))),
-          labels = LETTERS[1:5], label_size = 10, nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/shared_legend_right-1.png" style="display: block; margin: auto;" />
-
-And unlike before, the legend is identical regardless of which subplot
-we use with `get_legend()`:
-
-``` r
-## use COWplot to combine and add single legend
-plot_grid(plotlist = c(map(.x = maps_shared,
-                           .f = function(x) x + theme(legend.position = 'none')),
-                       list(get_legend(maps_shared[[4]]))),
-          labels = LETTERS[1:5], label_size = 10, nrow = 2)
-```
-
-<img src="/images/posts/geom-sf-facet/shared_legend_right2-1.png" style="display: block; margin: auto;" />
-
-This approach is still useful even if you’re not working with spatial
-data. `plot_grid()` is powerful because it lets you make asymmetric
-arrangements like this example from the `cowplot`
-[documentation](https://wilkelab.org/cowplot/articles/plot_grid.html):
-
-``` r
-p1 <- ggplot(mtcars, aes(disp, mpg)) + 
-  geom_point()
-p2 <- ggplot(mtcars, aes(qsec, mpg)) +
-  geom_point()
-
-plot_grid(p1, p2, labels = c('A', 'B'), rel_widths = c(1, 2))
-```
-
-<img src="/images/posts/geom-sf-facet/plot_grid_asymmetric-1.png" style="display: block; margin: auto;" />
-
-If the units you’re faceting by contain substantially different
-observations, you might end up in a situation where the automatically
-generated legends are different from one another. Manually creating the
-scale of the legend and ensuring it’s the same for all plots would solve
-this problem here, too.
 
 # Bonus: still to solve
 
