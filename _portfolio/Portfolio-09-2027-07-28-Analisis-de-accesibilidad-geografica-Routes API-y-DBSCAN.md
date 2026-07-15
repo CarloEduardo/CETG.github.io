@@ -1,13 +1,13 @@
 ---
-title: "05 Predicción de Abandono de Clientes"
+title: "09 Análisis de Accesibilidad Geográfica con Routes API y DBSCAN"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-07-15
-permalink: /posts/2021/05/geom-sf-facet
+date: 2027-07-26
+permalink: /portfolio/Portfolio-09-2027-07-28-Analisis-de-accesibilidad-geografica-Routes API-y-DBSCAN
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,8 +18,7 @@ tags:
   - peacekeeping
 ---
 
-
-Modelo de aprendizaje automático desarrollado en Python para predecir el abandono de clientes (churn). El proyecto abarca limpieza y transformación de datos, análisis exploratorio, selección de variables, tratamiento del desbalance de clases, entrenamiento y comparación de modelos de clasificación, validación cruzada y visualización de resultados mediante un dashboard en Power BI.
+Metodología para analizar la accesibilidad geográfica mediante tiempos de viaje obtenidos con Google Routes API y técnicas de clustering espacial (DBSCAN), aplicable a la planificación territorial y la localización óptima de servicios y negocios.
 
 <!--more-->
 

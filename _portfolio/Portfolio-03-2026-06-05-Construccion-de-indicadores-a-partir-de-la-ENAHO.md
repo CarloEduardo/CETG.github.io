@@ -1,13 +1,13 @@
 ---
-title: "08 Automatizacion de reportes con Rmarkdown"
+title: "03 Construcción de indicadores a partir de la ENAHO"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2027-07-26
-permalink: /posts/2021/05/geom-sf-facet
+date: 2026-06-05
+permalink: /portfolio/Portfolio-03-2026-06-05-Construccion-de-indicadores-a-partir-de-la-ENAHO
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Proyecto para automatizar la generación de reportes dinámicos en PDF, Word y HTML mediante R Markdown, integrando análisis, tablas, gráficos y texto en documentos reproducibles.
+Repositorio en Stata para la construcción de indicadores socioeconómicos a partir de la Encuesta Nacional de Hogares (ENAHO). Incluye procesos automatizados de limpieza, transformación y análisis de datos para generar indicadores reproducibles.
 
 <!--more-->
 

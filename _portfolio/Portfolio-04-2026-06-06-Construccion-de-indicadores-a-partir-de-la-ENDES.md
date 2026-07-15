@@ -1,13 +1,13 @@
 ---
-title: "10 Metodología para la Estimación del Fondo Invierte para el Desarrollo Territorial (FIDT)"
+title: "04 Construcción de indicadores a partir de la ENDES"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2027-07-26
-permalink: /posts/2021/05/geom-sf-facet
+date: 2026-06-06
+permalink: /portfolio/Portfolio-04-2026-06-06-Construccion-de-indicadores-a-partir-de-la-ENDES
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Metodología desarrollada para estimar y priorizar la asignación de recursos del Fondo Invierte para el Desarrollo Territorial (FIDT), apoyando la evaluación de proyectos de inversión pública mediante criterios técnicos y análisis de datos.
+Repositorio en Stata para la construcción de indicadores demográficos y de salud a partir de la Encuesta Demográfica y de Salud Familiar (ENDES). Incluye procesos automatizados de procesamiento, análisis y generación de indicadores.
 
 <!--more-->
 

@@ -1,13 +1,13 @@
 ---
-title: "04 Construcción de indicadores a partir de la ENDES"
+title: "07 Proyectos de Power Bi"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-06-06
-permalink: /posts/2021/05/geom-sf-facet
+date: 2027-07-26
+permalink: /portfolio/Portfolio-07-2027-07-26-Proyectos-en-Power-Bi
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Repositorio en Stata para la construcción de indicadores demográficos y de salud a partir de la Encuesta Demográfica y de Salud Familiar (ENDES). Incluye procesos automatizados de procesamiento, análisis y generación de indicadores.
+Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
 
 <!--more-->
 

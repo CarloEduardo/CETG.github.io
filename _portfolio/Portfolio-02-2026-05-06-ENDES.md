@@ -1,13 +1,13 @@
 ---
-title: "06 Predicción de Incumplimiento de Crédito"
+title: "02 Web Scraping ENDES 2004-2025"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-07-22
-permalink: /posts/2021/05/geom-sf-facet
+date: 2026-05-06
+permalink: /portfolio/Portfolio-02-2026-05-06-ENDES
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Modelo de aprendizaje automático desarrollado en Python para predecir el incumplimiento de crédito de clientes. El proyecto incluye preprocesamiento de datos, análisis exploratorio, ingeniería de características, entrenamiento y evaluación de modelos de clasificación, optimización de hiperparámetros e interpretación de resultados mediante métricas de desempeño.
+Script automatizado en Stata para descargar, organizar y extraer los módulos de la Encuesta Demográfica y de Salud Familiar (ENAHO) del portal de [Microdatos](https://proyectos.inei.gob.pe/microdatos/) del INEI (2004–2025). Incluye gestión de módulos, extracción de archivos ZIP y una estructura reproducible para facilitar el procesamiento de datos.
 
 <!--more-->
 

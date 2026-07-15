@@ -1,13 +1,13 @@
 ---
-title: "07 Proyectos de Power Bi"
+title: "05 Predicción de Abandono de Clientes"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2027-07-26
-permalink: /posts/2021/05/geom-sf-facet
+date: 2026-07-15
+permalink: /portfolio/Portfolio-05-2026-07-15-Prediccion-de-Abandono-de-Clientes
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,8 @@ tags:
   - peacekeeping
 ---
 
-Colección de dashboards desarrollados en Power BI para proyectos de educación, programas sociales y análisis de negocios. Incluye indicadores de gestión, monitoreo de resultados, análisis geoespacial y reportes interactivos para apoyar la toma de decisiones
+
+Modelo de aprendizaje automático desarrollado en Python para predecir el abandono de clientes (churn). El proyecto abarca limpieza y transformación de datos, análisis exploratorio, selección de variables, tratamiento del desbalance de clases, entrenamiento y comparación de modelos de clasificación, validación cruzada y visualización de resultados mediante un dashboard en Power BI.
 
 <!--more-->
 

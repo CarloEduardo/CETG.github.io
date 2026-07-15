@@ -1,13 +1,13 @@
 ---
-title: "02 Web Scraping ENDES 2004-2025"
+title: "08 Automatizacion de reportes con Rmarkdown"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-05-06
-permalink: /posts/2021/05/geom-sf-facet
+date: 2027-07-26
+permalink: /portfolio/Portfolio-08-2027-07-27-Automatizacion-de-reportes-con-R-Markdown
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Script automatizado en Stata para descargar, organizar y extraer los módulos de la Encuesta Demográfica y de Salud Familiar (ENAHO) del portal de [Microdatos](https://proyectos.inei.gob.pe/microdatos/) del INEI (2004–2025). Incluye gestión de módulos, extracción de archivos ZIP y una estructura reproducible para facilitar el procesamiento de datos.
+Proyecto para automatizar la generación de reportes dinámicos en PDF, Word y HTML mediante R Markdown, integrando análisis, tablas, gráficos y texto en documentos reproducibles.
 
 <!--more-->
 

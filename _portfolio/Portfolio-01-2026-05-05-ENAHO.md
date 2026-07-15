@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 date: 2026-05-05
-permalink: /posts/2021/05/geom-sf-facet
+permalink: /portfolio/Portfolio-01-2026-05-05-ENAHO
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -21,6 +21,283 @@ tags:
 Script automatizado en Stata para descargar, organizar y extraer los módulos de la Encuesta Nacional de Hogares (ENAHO) del portal de [Microdatos](https://proyectos.inei.gob.pe/microdatos/) del INEI (2004–2025). Incluye gestión de módulos, extracción de archivos ZIP y una estructura reproducible para facilitar el procesamiento de datos.
 
 <!--more-->
+
+1. Abrir el archivo 
+```bash
+Download-ENAHO-2004-2025.do
+```
+
+2. Modificar la ruta donde se almacenarán los archivos descargados.
+```stata
+global Path = "E:\07. GitHub\01-Web-Scraping-ENAHO-2004-2025"
+```
+
+3. Si lo deseas, modificar el rango de años:
+```stata
+local y_start = 4
+local y_end   = 25
+```
+
+4. Seleccionar los módulos que deseas descargar:
+```stata
+foreach j in 1 2 3 4 5 {
+```
+
+5. Ejecutar el script.
+
+## 3. Módulos disponibles <a id="3"></a>
+___
+<table>
+<thead><tr>
+<th><strong>Nro</strong></th>
+<th><strong>Módulo</strong></th>
+<th><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Módulo 1</td>
+<td>Características de la Vivienda y del Hogar</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Módulo 2</td>
+<td>Características de los Miembros del Hogar</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Módulo 3</td>
+<td>Educación</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Módulo 4</td>
+<td>Salud</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Módulo 5</td>
+<td>Empleo e Ingresos</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Módulo 7</td>
+<td>Gastos en Alimentos y Bebidas/td>
+</tr>
+<tr>
+<td>7</td>
+<td>Módulo 8</td>
+<td>Instituciones Benéficas</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Módulo 9</td>
+<td>Mantenimiento de la Vivienda</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Módulo 10</td>
+<td>Transportes y Comunicaciones</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Módulo 11</td>
+<td>Servicios de la Vivienda</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Módulo 12</td>
+<td>Esparcimiento, Diversión y Servicios Culturales</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Módulo 13</td>
+<td>Vestido y Calzado</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Módulo 15</td>
+<td>Gastos de Transferencias</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Módulo 16</td>
+<td>Muebles y Enseres</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Módulo 17</td>
+<td>Otros Bienes y Servicios</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Módulo 18</td>
+<td>Equipamiento del Hogar</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Módulo 22</td>
+<td>Producción Agrícola</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Módulo 23</td>
+<td>Subproductos Agrícolas</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Módulo 24</td>
+<td>Producción Forestal</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Módulo 25</td>
+<td>Gastos en Actividades Agrícolas y/o Forestales</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Módulo 26</td>
+<td>Producción Pecuaria</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Módulo 27</td>
+<td>Subproductos Pecuarios</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Módulo 28</td>
+<td>Gastos en Actividades Pecuarias</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Módulo 34</td>
+<td>Variables Calculadas (Resumen)</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Módulo 37</td>
+<td>Programas Sociales</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Módulo 77</td>
+<td>Ingresos del Trabajador Independiente</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Módulo 78</td>
+<td>Bienes y Servicios para el Cuidado Personal</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Módulo 84</td>
+<td>Participación Ciudadana</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Módulo 85</td>
+<td>Gobernabilidad, Democracia y Transparencia</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Módulo 1825</td>
+<td>Beneficiarios de Instituciones sin fines de lucro: Olla Común</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Módulo 2081</td>
+<td>Crianza de Mascotas en el Hogar</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Módulo 2082</td>
+<td>Inseguridad Alimentaria</td>
+</tr>
+</tbody>
+</table>
+
+## 4. Funcionamiento del script <a id="4"></a>
+El script realiza automáticamente las siguientes tareas:
+
+1. Crea la estructura de carpetas del proyecto.
+2. Recorre los años seleccionados.
+3. Obtiene el Código de Encuesta correspondiente a cada año.
+4. Recorre los módulos seleccionados.
+5. Descarga cada archivo ZIP desde el portal oficial del INEI.
+6. Descomprime automáticamente cada archivo.
+7. Conserva el archivo ZIP cuando ocurre un error durante la extracción.
+
+El proceso completo puede resumirse mediante el siguiente flujo:
+
+
+El siguiente diagrama resume el flujo de ejecución del script para descargar y extraer automáticamente los módulos de la **Encuesta Nacional de Hogares (ENAHO)**:
+
+```mermaid
+---
+title: Flujo del proceso de descarga y extracción de la ENAHO (2004–2025)
+---
+flowchart TD
+
+A([Inicio]) --> B[Definir directorio de trabajo]
+B --> C[Crear carpeta principal ENAHO]
+C --> D{{Iterar por años<br/>2004–2025}}
+D --> E[Obtener Código de Encuesta]
+E --> F{{Iterar por módulos}}
+F --> G[Construir URL de descarga]
+G --> H[Descargar archivo ZIP]
+H --> I[Descomprimir archivo ZIP]
+I --> J{¿Extracción exitosa?}
+J -- Sí --> K[Continuar con el siguiente módulo]
+J -- No --> L[Conservar archivo ZIP<br/>Mostrar mensaje de extracción manual]
+L --> K
+K --> M{¿Quedan módulos?}
+M -- Sí --> F
+M -- No --> N{¿Quedan años?}
+N -- Sí --> D
+N -- No --> O([Fin])
+```
+
+
+*Elaboración propia.* <br>
+***Nota:** El diagrama muestra el flujo de ejecución del script, incluyendo la iteración por años y módulos, la construcción de la URL de descarga, la obtención de los archivos desde el portal oficial del INEI y su extracción automática. En caso de que un archivo comprimido presente inconsistencias, el script conserva el archivo `.zip` y notifica al usuario que la extracción debe realizarse manualmente.*
+
+## 5. Resultado 📂<a id="5"></a>
+Al finalizar la ejecución se obtiene una estructura similar a la siguiente:
+
+```text
+ENAHO/
+│
+├──2004/
+│   ├── enaho01-2004.dta
+│   ├── enaho02-2004.dta
+│   └── ...
+│
+├──2005/
+│
+├──...
+│
+└──2025/
+```
+Cada carpeta contiene todos los módulos descargados y extraídos para el año correspondiente.
+
+## 6. Observaciones ⚠️<a id="6"></a>
+En algunos años, determinados archivos ZIP publicados por el INEI presentan inconsistencias que impiden su extracción automática mediante Stata.
+Cuando esto ocurre, el script muestra un mensaje indicando que el archivo debe descomprimirse manualmente. El archivo ZIP descargado se conserva para facilitar este proceso.
+
+## Licencia <a id="9"></a>
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](/LICENSE) para más detalles.
+
+## Autor 👨‍💻<a id="10"></a>
+
+**Carlos Eduardo Torres García**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlo4-eduardo-torres-garcia/)
+[![X Twitter](https://img.shields.io/badge/Twitter-000000?style=flat&logo=x&logoColor=white)](https://x.com/Carlo4_Eduardo)
+
+[**⬆ Volver al inicio**](#a)
+
+
 
 See this simple example, which displays the area of each county in North
 Carolina, from the `sf` package

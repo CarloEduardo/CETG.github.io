@@ -1,13 +1,13 @@
 ---
-title: "03 Construcción de indicadores a partir de la ENAHO"
+title: "06 Predicción de Incumplimiento de Crédito"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-date: 2026-06-05
-permalink: /posts/2021/05/geom-sf-facet
+date: 2026-07-22
+permalink: /portfolio/Portfolio-06-2026-07-22-Prediccion-de-Incumplimiento-de-Credito
 excerpt_separator: <!--more-->
 toc: true
 header:
@@ -18,7 +18,7 @@ tags:
   - peacekeeping
 ---
 
-Repositorio en Stata para la construcción de indicadores socioeconómicos a partir de la Encuesta Nacional de Hogares (ENAHO). Incluye procesos automatizados de limpieza, transformación y análisis de datos para generar indicadores reproducibles.
+Modelo de aprendizaje automático desarrollado en Python para predecir el incumplimiento de crédito de clientes. El proyecto incluye preprocesamiento de datos, análisis exploratorio, ingeniería de características, entrenamiento y evaluación de modelos de clasificación, optimización de hiperparámetros e interpretación de resultados mediante métricas de desempeño.
 
 <!--more-->
 
