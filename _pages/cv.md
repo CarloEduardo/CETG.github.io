@@ -46,17 +46,34 @@ Experiencia profesional
   * Elaboré reportes de seguimiento, análisis psicométricos y evaluaciones de encuestas aplicadas a becarios y egresados de Beca 18, generando insumos técnicos para el monitoreo.
   * Brindé apoyo en el seguimiento de productos de consultoría y modelos de acompañamiento.
 
-Skills
+Habilidades e Intereses
 ======
-* Skill 1
-  * Python
-  * R
-  * Stata
-  * SQL  
-* Power BI
-* LaTeX
+* **Programación:** Python, R, SQL
+* **Business Intelligence (BI):** Power BI, DAX, Power Query, Looker Studio
+* **Analítica de Datos:** Análisis Exploratorio de Datos, Monitoreo de KPI, Desarrollo de Dashboard, Data Storytelling
+* **Machine Learning:** Regression, Classification, Clustering, Predictive Analytics
+* **Data Engineering:** ETL, Data Pipelines, Validación de Datos, Calidad de Datos, Modelado de Datos
+* **Herramientas Especializadas:** Stata, QGIS, ODK, Power Apps, Power Automate, LaTeX
+* **Idiomas:** Español (Nativo), Inglés (B2-IELTS)
 
-Publications
+Cursos Complementarios
+======
+  * [PEA Data Science](https://drive.google.com/file/d/1ZD-jXmPalrj4J33SULfO42iJTSzhJVOr/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [Gobierno de Datos](https://drive.google.com/file/d/1-7mBjd0u2JlNnusVpHiZReDDZZHuUGRz/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [Especialización en Python for Analytics](https://drive.google.com/file/d/1dyIDh5tmStbYDr_pP8giukYN-Ossf1zS/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [PEA Business Intelligence Fundamentals](https://drive.google.com/file/d/1yr8dph3iM1kyaXvnamEnl_c6f8H27oIm/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [Data Storytelling](https://drive.google.com/file/d/1eYphI6rTvCtQnVECwI58j6uC9xK--f1b/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [Especialización en Power BI](https://drive.google.com/file/d/1LR7WhI-ClZZF_2rW77OzfS6rFG06GwBx/view?usp=sharing) — *Data Mining Consulting, 2023*
+  * [Métodos Mixtos de Investigación](https://drive.google.com/file/d/1SzKwoWNu2bc4IrZtVpJSmL-J3yHqIdzx/view?usp=sharing) — *Data Mining Consulting, 2022*
+  * [QGIS y Econometría Espacial](https://drive.google.com/file/d/1Du7s_lqcPqeEOlfg-FeMs-u3PRZ4M_Nz/view?usp=sharing) — *Grupo LAMBDA S.A.C., 2021*
+  * [Planeamiento y Ejecución de Encuestas](https://drive.google.com/file/d/16aM_5-hzzeYLrxCA6S-JYrC2mOUILr79/view?usp=sharing) — *ENEI, 2021*
+  * [Machine Learning Advanced](https://drive.google.com/file/d/1PPQaF_WWa5tohljHXzXS2T8ZRToKm8yq/view?usp=sharing) — *Data Mining Consulting, 2020*
+  * [Python para Economistas](https://drive.google.com/file/d/1omRPI3GFlZKefkDFeebbGKUR2hBtakYI/view?usp=sharing) — *Grupo LAMBDA S.A.C., 2019*
+  * [Gestión de Proyectos Sociales para ONGs y Organizaciones de la Sociedad Civil](https://drive.google.com/file/d/14VQo0jDZ8tpjPK-cf_Y67MvtgjMSH8jD/view?usp=sharing) — *BID, 2019*
+  * [Taller de Evaluación de Impacto – Nivel Intermedio](https://drive.google.com/file/d/1SdmhWkf_S-UEydizGzBo4aCxwVxhueud/view?usp=sharing) — *CISEPA – PUCP, 2018*
+  * [Taller de Investigación Social Aplicada usando STATA](https://drive.google.com/file/d/1OLuvZ67xUicr1GUz5BRW-oAcLVTje5s-/view?usp=sharing) — *CISEPA – PUCP, 2018*
+
+Publicaciones
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
