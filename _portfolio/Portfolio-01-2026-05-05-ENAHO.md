@@ -22,6 +22,27 @@ Script automatizado en Stata para descargar, organizar y extraer los módulos de
 
 <!--more-->
 
+## 1. Requisitos ⚙️ <a id='1'></a>
+Para ejecutar este proyecto únicamente se requiere:
+- **Stata 16** o superior.
+- Permisos de escritura en el directorio donde se almacenarán los archivos descargados.
+- **Git** (opcional), para clonar el repositorio.
+
+## 2. Instalación y uso 🚀 <a id='2'></a>
+
+### 2.1. Clonar el repositorio
+
+1. Abrir una terminal o línea de comandos Git Bash.
+
+2. Ejecutar el siguiente comando para clonar el repositorio en tu máquina local:
+```bash
+git clone https://github.com/CarloEduardo/01-Web-Scraping-ENAHO-2004-2025.git
+```
+3. Establecer como directorio de trabajo la carpeta clonada.
+```
+cd \E:\07. GitHub\01-Web-Scraping-ENAHO-2004-2025\
+```
+
 1. Abrir el archivo 
 ```bash
 Download-ENAHO-2004-2025.do
@@ -151,77 +172,7 @@ Cuando esto ocurre, el script muestra un mensaje indicando que el archivo debe d
 ## Licencia <a id="9"></a>
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](/LICENSE) para más detalles.
 
-## Autor 👨‍💻<a id="10"></a>
-
-**Carlos Eduardo Torres García**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlo4-eduardo-torres-garcia/)
-[![X Twitter](https://img.shields.io/badge/Twitter-000000?style=flat&logo=x&logoColor=white)](https://x.com/Carlo4_Eduardo)
-
-[**⬆ Volver al inicio**](#a)
-
-# Bonus: still to solve
-
-Don’t let anyone convince you they know everything. I still haven’t
-managed to get my ideal (conditional on regular faceting with
-`facet_wrap()` being out of the question) solution to this working. I
-tried to create five subplots and just add a facet label to each, with
-each one being a facet of one panel. Straightforward enough, right?
-
-``` r
-maps_facet <- map(.x = pko_countries, 
-                  .f = function(x) adm %>% 
-                    filter(NAME_0 == x) %>% 
-                    st_join(acled) %>% 
-                    group_by(NAME_0, NAME_1, NAME_2) %>% 
-                    summarize(attacks = log1p(sum(!is.na(event_id_cnty)))) %>% 
-                    ggplot(aes(fill = attacks)) +
-                    geom_sf(lwd = NA) +
-                    scale_fill_continuous(limits = attacks_range,
-                                          name = 'PKO targeting\nevents (logged)') +
-                    facet_wrap(~NAME_0) +
-                    theme_rw() +
-                    theme(axis.text = element_blank(),
-                          axis.ticks = element_blank()))
-
-plot_grid(plotlist = c(map(.x = maps_facet,
-                           .f = function(x) x + theme(legend.position = 'none')),
-                       list(get_legend(maps_facet[[1]]))),
-          nrow = 2)
-```
+[**⬆ Volver al inicio**](#top)
 
 <img src="/images/posts/geom-sf-facet/shared_legend_facet_calc-1.png" style="display: block; margin: auto;" />
 
-Not so much, and no amount of tinkering with the `align` and `axis`
-arguments to `plot_grid()` has yielded any improvement. The specific
-paper this plot is for doesn’t have any other plots with facets, so I’m
-content to go with my inelegant solution of lettered labels and a key to
-them in the figure caption. If that weren’t the case, I might still be
-fiddling with this and getting deeper and deeper into the source code
-for `plot_grid()`.
-
-[^1]: If you’re wondering why the largest county area is in the ballpark
-    of 0.25, it’s because the data are in [square
-    degrees](https://en.wikipedia.org/wiki/Square_degree), an old non-SI
-    unit of measurement that’s defined in terms of how much the field of
-    view from a given point is obstructed by an object. GIS is so easy
-    these days, folks.
-
-[^2]: The more I learn about how `ggplot2` and `sf` work under the hood,
-    the more amazed I am that `geom_sf()` Just Works in 80% of cases,
-    let alone works at all.
-
-[^3]: The answer also listed the `geom_spatial()` function from the
-    `ggspatial` package as an alternative option, but I couldn’t get it
-    to work. The answer is three and a half years old, which means it’s
-    very possible something changed in either `sf` or `ggspatial` that
-    broke this solution. So it goes.
-
-[^4]: It’s much more powerful and easily customizable than
-    `gridExtra::grid.arrange()`.
-
-[^5]: They can also contain heterogeneous elements which will come in
-    handy [later](#shared-legend).
-
-[^6]: If you check out the actual source code of `plot_grid()`, line 9
-    shows you that the function is indeed putting `...` ahead of
-    `plotlist`: `plots <- c(list(...), plotlist)`.
