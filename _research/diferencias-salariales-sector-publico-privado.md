@@ -1,11 +1,11 @@
 ---
 title: "Diferencias salariales entre trabajadores del Sector Público y el Sector Privado"
 layout: single-portfolio
-excerpt: "<img src='/images/research/diferencias-salariales-sector-publico-privado/portada-pub-vs-pri.png' alt=''>"
+excerpt: "<img src='/images/research/diferencias-salariales-sector-publico-privado/portada-pub-vs-pri_912x912.png' alt=''>"
 collection: research
 order_number: 10
 header: 
-  og_image: "research/diferencias-salariales-sector-publico-privado/portada-pub-vs-pri.png"
+  og_image: "research/diferencias-salariales-sector-publico-privado/portada-pub-vs-pri_912x912.png"
 ---
 
 ## Resumen

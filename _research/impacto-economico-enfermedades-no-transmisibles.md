@@ -1,11 +1,11 @@
 ---
 title: "Impacto Económico de las Enfermedades No Transmisibles en Perú, 2010 - 2019"
 layout: single-portfolio
-excerpt: "<img src='/images/research/impacto-economico-enfermedades-no-transmisibles/portada-enp.png' alt=''>"
+excerpt: "<img src='/images/research/impacto-economico-enfermedades-no-transmisibles/portada-enp_912x912.png' alt=''>"
 collection: research
 order_number: 40
 header: 
-  og_image: "research/impacto-economico-enfermedades-no-transmisibles/portada-enp.png"
+  og_image: "research/impacto-economico-enfermedades-no-transmisibles/portada-enp_912x912.png"
 ---
 
 ## Resumen

@@ -1,11 +1,11 @@
 ---
 title: "El licenciamiento de las universidades importa: No más segundas oportunidades"
 layout: single-portfolio
-excerpt: "<img src='/images/research/licenciamiento-universidades-importa/portada-licenciamiento.png' alt=''>"
+excerpt: "<img src='/images/research/licenciamiento-universidades-importa/portada-licenciamiento_912x912.png' alt=''>"
 collection: research
 order_number: 30
 header: 
-  og_image: "research/licenciamiento-universidades-importa/portada-licenciamiento.png"
+  og_image: "research/licenciamiento-universidades-importa/portada-licenciamiento_912x912.png"
 ---
 
 ## Resumen
