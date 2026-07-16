@@ -1,5 +1,5 @@
 ---
-title: "08 Automatizacion de reportes con R Markdown"
+title: "09 Análisis de Accesibilidad Geográfica con Routes API y DBSCAN"
 output:
   md_document:
     variant: gfm+footnotes
@@ -7,18 +7,18 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 date: 2027-07-26
-permalink: /portfolio/Portfolio-08-Automatizacion-de-reportes-con-R-Markdown
+permalink: /portfolio/Portfolio-09-Analisis-de-accesibilidad-geografica-Routes-API-y-DBSCAN
 excerpt_separator: <!--more-->
 toc: true
 header:
- og_image: "posts/Portfolio-08-Automatizacion-de-reportes-con-R-Markdown/shared_legend_right-1.png"
+ og_image: "posts/Portfolio-09-Analisis-de-accesibilidad-geografica-Routes-API-y-DBSCAN/shared_legend_right-1.png"
 tags:
   - GIS
   - visualization
   - peacekeeping
 ---
 
-Proyecto para automatizar la generación de reportes dinámicos en PDF, Word y HTML mediante R Markdown, integrando análisis, tablas, gráficos y texto en documentos reproducibles.
+Metodología para analizar la accesibilidad geográfica mediante tiempos de viaje obtenidos con Google Routes API y técnicas de clustering espacial (DBSCAN), aplicable a la planificación territorial y la localización óptima de servicios y negocios.
 
 <!--more-->
 

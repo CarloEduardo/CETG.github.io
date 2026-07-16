@@ -1,5 +1,5 @@
 ---
-title: "09 Análisis de Accesibilidad Geográfica con Routes API y DBSCAN"
+title: "10 Metodología para la Estimación del Fondo Invierte para el Desarrollo Territorial (FIDT)"
 output:
   md_document:
     variant: gfm+footnotes
@@ -7,18 +7,18 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 date: 2027-07-26
-permalink: /portfolio/Portfolio-09-Analisis-de-accesibilidad-geografica-Routes API-y-DBSCAN
+permalink: /portfolio/Portfolio-10-Metodología-de-estimacion-del-Fondo-Invierte-para-el-Desarrollo-Territorial-FIDT
 excerpt_separator: <!--more-->
 toc: true
 header:
- og_image: "posts/Portfolio-09-Analisis-de-accesibilidad-geografica-Routes API-y-DBSCAN/shared_legend_right-1.png"
+ og_image: "posts/Portfolio-10-Metodologia-de-estimacion-del-Fondo-Invierte-para-el-Desarrollo-Territorial-FIDT/shared_legend_right-1.png"
 tags:
   - GIS
   - visualization
   - peacekeeping
 ---
 
-Metodología para analizar la accesibilidad geográfica mediante tiempos de viaje obtenidos con Google Routes API y técnicas de clustering espacial (DBSCAN), aplicable a la planificación territorial y la localización óptima de servicios y negocios.
+Metodología desarrollada para estimar y priorizar la asignación de recursos del Fondo Invierte para el Desarrollo Territorial (FIDT), apoyando la evaluación de proyectos de inversión pública mediante criterios técnicos y análisis de datos.
 
 <!--more-->
 

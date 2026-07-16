@@ -138,7 +138,7 @@ N -- "No" --> O([Fin])
 
 La siguiente figura muestra la interfaz del portal de Microdatos del INEI para la descarga de la ENDES. Se resaltan el año de la encuesta, el código de la encuesta y el código del módulo, que constituyen los parámetros utilizados por el script para construir automáticamente las URL de descarga de cada archivo.
 
-<img src="/images/posts/Portfolio-02-2026-05-06-ENDES/ENDES-Download-2.png" style="display: block; margin: auto;" />
+<img src="/images/posts/Portfolio-02-Web-Scraping-ENDES-2004-2025/ENDES-Download-2.png" style="display: block; margin: auto;" />
 
 ## 5. Resultado 📂<a id="5"></a>
 Al finalizar la ejecución se obtiene una estructura similar a la siguiente:
