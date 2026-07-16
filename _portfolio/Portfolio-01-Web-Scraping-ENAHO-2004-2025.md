@@ -7,11 +7,11 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 date: 2026-05-05
-permalink: /portfolio/Portfolio-01-2026-05-05-ENAHO
+permalink: /portfolio/Portfolio-01-Web-Scraping-ENAHO-2004-2025
 excerpt_separator: <!--more-->
 toc: true
 header:
- og_image: "posts/Portfolio-01-2026-05-05-ENAHO/shared_legend_right-1.png"
+ og_image: "posts/Portfolio-01-Web-Scraping-ENAHO-2004-2025/shared_legend_right-1.png"
 tags:
   - GIS
   - visualization
