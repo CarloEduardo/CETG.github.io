@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Economista por la Universidad Nacional Mayor de San Marcos (Lima, Perú). Mis principales áreas de interés son la **microeconomía aplicada (Applied Microeconomics)** y la **ciencia de datos (Data Science)**. Mi experiencia abarca la evaluación de impacto**, el análisis estadístico y el desarrollo de modelos basados en datos, empleando herramientas como **Python, SQL, R, Stata** y **Power BI**.
+Economista por la Universidad Nacional Mayor de San Marcos (Lima, Perú). Mis principales áreas de interés son la **microeconomía aplicada (Applied Microeconomics)** y la **ciencia de datos (Data Science)**. Mi experiencia abarca la evaluación de impacto, el análisis estadístico y el desarrollo de modelos basados en datos, empleando herramientas como **Python, SQL, R, Stata** y **Power BI**.
 
 {% comment %}  
 ¡Hola! Soy Carlos Eduardo Torres García, economista y científico de datos.
