@@ -34,14 +34,12 @@ Colección de dashboards desarrollados en Power BI para proyectos de educación,
 **Año:** 2025 - 2026  
 **Herramienta principal:** SQL, Power BI, Python, STATA, Git/GitHub  
 **Estado:** Control de calidad (etapa de pruebas)
----
 
 ## 1.1. Objetivo del Proyecto 🎯
 
 Construir/estimar indicadores y desarrollar **dashboards** estadísticos para la sección de indicadores de la nueva [**Plataforma VISIBLE**](https://visible.dansantivanezdev.space/) (un espacio implementado por el MIMP para integrar, estandarizar y organizar los observatorios del sector), orientados a consolidar información oficial y facilitar la toma de decisiones, la planificación de políticas públicas y la transparencia institucional.
 
 <!-- 🔗 [Plataforma VISIBLE](https://visible.dansantivanezdev.space/observatorios/discapacidad/estadisticas) (fase prueba) -->
----
 
 ## 1.2. Estructura del proyecto 🧮
 
@@ -85,15 +83,14 @@ Principales desagregaciones:
 - Periodo: 2019 – 2024
 - Área de residencia: Urbano / Rural
 - Región: 26 departamentos (incluye Lima metropolitana)
----
 
 ### 📈 Dashboard (Programas Presupuestales) [🔗ver](https://app.powerbi.com/view?r=eyJrIjoiYjdiYzAwZDItZWZjNi00ZDY4LTkzNmQtMDdjZmMxOWRiYzdkIiwidCI6IjY4MTljNDYzLTVkZWItNDA3MC1hY2I2LTlmZGQzY2FhZTk4NCJ9&pageName=5a7dac000b9e16b97ac8)
 ![VISIBLE](/images/posts/Portfolio-07-Proyectos-en-Power-Bi/01-Power-BI/PP0117_N.gif)
 
 ### 📈 Dashboard (Políticas Multisectoriales) [🔗ver](https://visible.dansantivanezdev.space/observatorios/discapacidad/estadisticas)
-![VISIBLE](01-Power-BI/EN.gif)
+![VISIBLE](/images/posts/Portfolio-07-Proyectos-en-Power-Bi/01-Power-BI/EN.gif)
+
 > Los dashboards permiten filtros dinámicos por periodo, región, área de residencia y características poblacionales.
----
 
 # 2. Proyecto Observatorio Nacional de la Discapacidad <a id='2'></a>
 
@@ -102,7 +99,6 @@ Principales desagregaciones:
 **Año:** 2024 | 2025  
 **Herramienta principal:** Power BI, Python, STATA, Git/GitHub, VSCode  
 **Estado:** En producción
----
 
 ## 2.1. Objetivo del Proyecto 🎯
 
@@ -205,7 +201,6 @@ Principales desagregaciones:
 Implementar **dashboards** estadísticos para la sección [**Estadísticas MIMP**](https://www.mimp.gob.pe/omep/estadisticas-tablero-desempenio-NNA.php) para el seguimiento de indicadores y rendición de cuentas sobre los Programas Presupuestales.
 
 🔗 [Estadísticas MIMP](https://www.mimp.gob.pe/omep/estadisticas-mimp.php)
----
 
 ## 3.2. Dashboard (Power BI) 📈
 ### **Programa Presupuestale 117:** Niñas, Niños y Adolescentes (NNA)  [🔗ver](https://app.powerbi.com/view?r=eyJrIjoiODA0YmY2OTEtYTE2ZC00NjM0LWFkYWItOWQ1NWQwMmUwN2RjIiwidCI6IjY4MTljNDYzLTVkZWItNDA3MC1hY2I2LTlmZGQzY2FhZTk4NCJ9)
