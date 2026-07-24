@@ -540,3 +540,10 @@ for `plot_grid()`.
     shows you that the function is indeed putting `...` ahead of
     `plotlist`: `plots <- c(list(...), plotlist)`.
 {% endcomment %}
+
+{% comment %}  
+## Licencia <a id="7"></a>
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](/LICENSE) para más detalles.
+
+[**⬆ Volver al inicio**](#top)
+{% endcomment %}
